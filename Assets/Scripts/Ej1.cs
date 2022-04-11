@@ -16,32 +16,34 @@ public class Ej1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-        if (codigo == "G")
-        {
-            int total = 300 * dias;
-            int precio =total*80/100;
-            Debug.Log("Para ese período se necesitan "+total+" gramos de alimento y le costaría "+precio +" pesos.");
-        }
-        else if (codigo == "PP")
-        {
-            int total = 400 * dias;
-            int precio = total * 80/100;
-            Debug.Log("Para ese período se necesitan "+total + " gramos de alimento y le costaría " + precio + " pesos.");
-        }
-        else if (codigo == "PG")
-        {
-            int total = 700 * dias;
-            int precio = total * 80/100;
-            Debug.Log("Para ese período se necesitan "+total+ " gramos de alimento y le costaría " + precio + " pesos.");
-        }
-        else if (dias < 3)
+        if (dias < 3)
         {
             Debug.Log("Error");
         }
         else
         {
-            Debug.Log("Error");
+            if (codigo == "G")
+            {
+                int total = 300 * dias;
+                int precio = total * 80 / 100;
+                Debug.Log("Para ese período se necesitan " + total + " gramos de alimento y le costaría " + precio + " pesos.");
+            }
+            else if (codigo == "PP")
+            {
+                int total = 400 * dias;
+                int precio = total * 80 / 100;
+                Debug.Log("Para ese período se necesitan " + total + " gramos de alimento y le costaría " + precio + " pesos.");
+            }
+            else if (codigo == "PG")
+            {
+                int total = 700 * dias;
+                int precio = total * 80 / 100;
+                Debug.Log("Para ese período se necesitan " + total + " gramos de alimento y le costaría " + precio + " pesos.");
+            }
+            else
+            {
+                Debug.Log("Error");
+            }
         }
     }
 
