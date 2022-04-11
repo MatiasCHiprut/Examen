@@ -17,20 +17,23 @@ public class Ej1 : MonoBehaviour
     void Start()
     {
 
-        if (codigo == G)
+        if (codigo == "G")
         {
             int total = 300 * dias;
-            Debug.Log("Para ese período se necesitan "+total+" gramos de alimento");
+            int precio =total*80/100;
+            Debug.Log("Para ese período se necesitan "+total+" gramos de alimento y le costaría "+precio +" pesos.");
         }
-        else if (codigo == PP)
+        else if (codigo == "PP")
         {
             int total = 400 * dias;
-            Debug.Log("Para ese período se necesitan "+total +" gramos de alimento");
+            int precio = total * 80/100;
+            Debug.Log("Para ese período se necesitan "+total + " gramos de alimento y le costaría " + precio + " pesos.");
         }
-        else if (codigo == PG)
+        else if (codigo == "PG")
         {
             int total = 700 * dias;
-            Debug.Log("Para ese período se necesitan "+total+" gramos de alimento");
+            int precio = total * 80/100;
+            Debug.Log("Para ese período se necesitan "+total+ " gramos de alimento y le costaría " + precio + " pesos.");
         }
         else if (dias < 3)
         {

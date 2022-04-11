@@ -292,6 +292,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0cb2addee883cd4cae8403876f7445c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  codigo: PG
+  dias: 5
 --- !u!4 &1321760422
 Transform:
   m_ObjectHideFlags: 0
